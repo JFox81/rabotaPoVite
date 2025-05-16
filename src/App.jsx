@@ -4,10 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  // Императивная часть: Использование хука useState для управления состоянием
   const [count, setCount] = useState(0)
-
-  // Декларативная часть: Весь return statement описывает ЧТО должно быть отрендерено
   return (
     <>
       <div>
@@ -20,7 +17,6 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        {/* Императивная часть: Обработчик события, который изменяет состояние */}
         <button onClick={() => setCount((count) => count + 1)}>
           Счетчик: {count}
         </button>
